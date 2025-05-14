@@ -1,0 +1,74 @@
+/* frontend/assets/css/main.css */
+
+/* Simple reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* Posts grid */
+.posts-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+}
+
+/* PostCard */
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  transition: box-shadow .2s;
+}
+.post-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+.post-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+}
+.post-card .meta {
+  color: #666;
+  font-size: .875rem;
+  margin-bottom: .75rem;
+}
+.post-card .snippet {
+  margin-bottom: .75rem;
+}
+.post-card a {
+  color: #06c;
+  text-decoration: none;
+}
+
+/* SearchBar */
+.search-form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.search-form input {
+  flex: 1;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.search-form button {
+  padding: .5rem 1rem;
+  border: 1px solid #06c;
+  background: #06c;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}

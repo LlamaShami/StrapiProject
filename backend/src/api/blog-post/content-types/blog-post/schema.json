@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "singularName": "blog-post",
+    "pluralName": "blog-posts",
+    "displayName": "Blog Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Author": {
+      "type": "string",
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Tech",
+        "Lifestyle",
+        "Games",
+        "Memes",
+        "Valorant",
+        "Amine",
+        "Movies",
+        "Social Media"
+      ]
+    },
+    "Snippet": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
