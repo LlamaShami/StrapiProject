@@ -18,7 +18,6 @@ interface Post {
 
 const props = defineProps<{ post: Post }>()
 
-// Explicitly log each field so you can see if any are empty
 console.log(
   '▶️ [PostCard.vue] post props →',
   'Title:', props.post.Title,
